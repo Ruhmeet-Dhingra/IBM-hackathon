@@ -26,7 +26,7 @@ command.
 
 | | Before | After |
 |---|---|---|
-| Imports? | |Crashes on `main.py:6`        | Imports cleanly |
+| Imports? | Crashes on `main.py:6`| Imports cleanly |
 | Tests passing | 0 (none runnable)|         | 5 / 5 |
 | Broken imports / phantom references        | ~31 documented | 0 |
 | `requirements.txt` | 3 corrupted UTF-16 lines       | Full clean dependency list |
