@@ -1,0 +1,13 @@
+openwakeword
+faster-whisper
+google-generativeai
+google-genai
+edge-tts
+python-vlc
+sounddevice
+soundfile
+numpy
+pystray
+Pillow
+python-dotenv
+customtkinter

@@ -1,0 +1,32 @@
+{
+    "name": "{{ plugin_name }}",
+    "version": "1.0.0",
+    "description": "{{ description }}",
+    "author": "ROV Developer",
+    "type": "{{ plugin_type }}",
+
+    "entry": {
+        "module": "plugin",
+        "class": "{{ class_name }}"
+    },
+
+    "enabled": true
+    ,
+    "permissions": [
+{% for permission in permissions %}
+        "{{ permission }}"{% if not loop.last %},{% endif %}
+{% endfor %}
+    ],
+
+    "dependencies": [
+{% for dependency in dependencies %}
+        "{{ dependency }}"{% if not loop.last %},{% endif %}
+{% endfor %}
+    ],
+
+    "commands": [
+{% for command in commands %}
+        "{{ command }}"{% if not loop.last %},{% endif %}
+{% endfor %}
+    ]
+}
