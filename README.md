@@ -58,10 +58,15 @@ so the overall codebase-rescue works in 3 phases
 
 ## sub skills 
 /codebase-rescue Full rescue of the open codebase
+
 /codebase-rescue inspect only Read-only analysis, no changes
+
 /codebase-rescue <path/to/file> Focus on a single file
+
 /codebase-rescue --imports Check only broken imports & phantom references
+
 /codebase-rescue --dead-code Find dead / unreachable code
+
 /codebase-rescue --review Security & code-quality pass
 
 
