@@ -39,10 +39,10 @@ cheap read-only inspection before spending anything on edits.
 ## How the skill works
 so the overall codebase-rescue works in 3 phases 
 
-- 1. **Inspect (read-only):** trace the entry point, classify every subsystem as CANONICAL or DEAD,
+- 1. **Inspect (read-only)(plan mode was used):** trace the entry point, classify every subsystem as CANONICAL or DEAD,
   list every run-blocker with file-and-line references, generate an architecture diagram, and
   stop for confirmation.
-- 2. **Fix:** repair independent blockers first, then dependent ones, then quarantine (follows a never delete policy)
+- 2. **Fix:(agent mode was used)** repair independent blockers first, then dependent ones, then quarantine (follows a never delete policy)
   dead code into a reversible folder, preserving any "bridge" file the spine still needs.
 - 3. **Verify:** confirm the entry point imports and the tests pass.
 
@@ -74,4 +74,5 @@ so the overall codebase-rescue works in 3 phases
 > **Note:** ROV is a pre-existing codebase used as the rescue *target*. The hackathon
 > contribution is the Bob-driven `codebase-rescue` skill and the fixes it applied during the
 > contest — see the commit history and `bob_sessions/` for proof.
+
 
